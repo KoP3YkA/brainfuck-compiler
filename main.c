@@ -2,7 +2,7 @@
 #include "lib/array/array.h"
 #include "lib/files/file_manager.h"
 
-CompilerFile output = { "../output.asm" };
+CompilerFile output = { "output.asm" };
 int current_loop_id = 0;
 Array brackets_stack;
 
@@ -62,7 +62,7 @@ int main() {
     create_file_if_not_exists(&output);
     overwrite_file(&output, "section .bss\ntape resb 30000\n\nsection .text\nglobal _start\n\n_start:\nmov rsi, tape");
 
-    CompilerFile file = { "../input.txt" };
+    CompilerFile file = { "input.txt" };
     char* text = file_read(&file);
 
     if (!text) {

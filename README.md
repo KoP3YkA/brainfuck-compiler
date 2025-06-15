@@ -24,4 +24,5 @@ It does **not interpret** or simulate Brainfuck — it directly **generates .asm
 ++++++++[>++++++++<-]>+.
 ```
 
-2. Run the compiler. This will generate the compiled NASM code in output.asm.
+2. Run `docker-compose up --build` and wait for complete.
+3. Check output.
