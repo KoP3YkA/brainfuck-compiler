@@ -17,7 +17,7 @@ It does **not interpret** or simulate Brainfuck — it directly **generates .asm
 
 ## ⚙️ How to Use
 
-1. In the `input.txt` file, write your Brainfuck code.  
+1. In the `input.b` file, write your Brainfuck code.  
    For example:
 
 ```brainfuck

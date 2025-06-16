@@ -62,11 +62,11 @@ int main() {
     create_file_if_not_exists(&output);
     overwrite_file(&output, "section .bss\ntape resb 30000\n\nsection .text\nglobal _start\n\n_start:\nmov rsi, tape");
 
-    CompilerFile file = { "input.txt" };
+    CompilerFile file = { "input.b" };
     char* text = file_read(&file);
 
     if (!text) {
-        printf("Cannot find input.txt file");
+        printf("Cannot find input.b file");
         return -1;
     }
 
