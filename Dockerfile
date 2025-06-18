@@ -6,6 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN gcc main.c lib/files/file_manager.c lib/array/array.c -o bf_compiler
+RUN gcc main.c lib/files/file_manager.c lib/array/array.c lib/commands/commands.c lib/logic/compiler_logic.c -o bf_compiler
 
 CMD ["/bin/bash", "-c", "./bf_compiler && nasm -f elf64 output.asm -o output.o && ld output.o -o output && ./output"]

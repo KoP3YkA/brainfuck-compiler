@@ -8,7 +8,7 @@ It does **not interpret** or simulate Brainfuck — it directly **generates .asm
 
 ## 🗂️ What This Project Does
 
-- Takes a `.txt` file with Brainfuck code as input
+- Takes a `.b` file with Brainfuck code as input
 - Translates each Brainfuck command into corresponding NASM x64 instructions
 - Outputs an `output.asm` file containing valid assembly code
 - You can then assemble and run the generated code manually (or automatically)

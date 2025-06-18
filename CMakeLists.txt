@@ -7,4 +7,9 @@ add_executable(brainfuck_compiler main.c
         lib/array/array.c
         lib/array/array.h
         lib/files/file_manager.c
-        lib/files/file_manager.h)
+        lib/files/file_manager.h
+        lib/commands/commands.c
+        lib/global.h
+        lib/commands/commands.h
+        lib/logic/compiler_logic.c
+        lib/logic/compiler_logic.h)
